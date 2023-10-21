@@ -1,30 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Website</title>
-    <link rel="stylesheet" href="style.css">
+<title>My Beautiful Website</title>
+<style>
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.text-container h1 {
+  color: white;
+  font-size: 30px;
+}
+
+.text-container p {
+  color: white;
+  font-size: 20px;
+}
+
+.text-container a {
+  color: white;
+  font-size: 16px;
+}
+</style>
 </head>
 <body>
-    <h1>My Name</h1>
-    <p>This is my website. Here you can learn more about me and my work.</p>
+<div class="video-container">
+  <video src="https://github.com/raghavshuklaofficial/raghavshuklaofficial.github.io/blob/main/Sci-fi%20Spaceship%20Interior.mp4" autoplay loop muted></video>
+  <div class="overlay"></div>
+</div>
 
-    <section id="info">
-        <h2>Info</h2>
-        <ul>
-            <li>Email: will be updated !/li>
-            <li>Phone: Will be updated !</li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/raghavshuklaofficial">https://www.linkedin.com/in/raghavshuklaofficial/a></li>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/your_username/project_name">Project 1</a></li>
-            <li><a href="https://github.com/your_username/project_name">Project 2</a></li>
-            <li><a href="https://github.com/your_username/project_name">Project 3</a></li>
-        </ul>
-    </section>
+<div class="text-container">
+  <h1>My Beautiful Website</h1>
+  <p>My name is Raghav Shukla and I am a student at Graphic Era Institute of Technology. I am a software engineer and I am passionate about building beautiful and useful websites.</p>
+  <a href="https://www.linkedin.com/in/raghavshuklaofficial">LinkedIn</a>
+  <a href="https://github.com/raghavshuklaofficial">GitHub</a>
+</div>
 </body>
 </html>
